@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Reverted Youth</title>    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Reverted Youth</title>        
   </head>
   <style>
     body {
@@ -24,9 +25,11 @@
       font-family: "Gruppo", sans-serif;
       font-weight: 400;
       font-style: normal;
+      color: #FFF;
+      justify-content: center;
     }
     img {
-      width: 50%;      
+      width: 100%;      
       margin: 0 auto;
     }
     .contact {
@@ -36,7 +39,7 @@
       flex-direction: column;
       align-self: center;
     }
-    .contact .title {
+    .contact-title {
       font-size: 25px;
       margin: 5px 0;
     }
@@ -44,16 +47,143 @@
       font-size: 22px;
       margin: 5px 0;
     }
+    
+    .title {
+      margin: 70px 0 30px 0;
+      align-self: center;
+      display: flex;
+      font-size: 76px;
+      font-family: "Playfair", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      font-variation-settings:
+       "wdth" 100;
+       
+      text-align: center;
+    }
+    
+    .subtitle {
+      margin: 45px 0 45px 0;
+      align-self: center;
+      display: flex;
+      font-size: 69px; 
+      text-align: center;
+    }
+    
+    .top_img {
+      width: 80%;
+    }
+    
+    .main {
+      font-size: 35px;
+      flex-direction: column;
+      display: flex;    
+      align-items: center;      
+    }
+    
+    .main p {
+      margin: 17px 20px;
+      width: 50%;
+    }
+    
+    .middle_img {
+      width: 50%;
+      margin: 35px auto 60px;
+    }
+    
+    .prize {
+      font-size: 35px;
+      flex-direction: column;
+      display: flex;    
+      align-items: center;
+      margin: 0 0 35px 0;
+    }
+    
+    .prize p {
+      margin: 17px 20px;
+      width: 50%;
+    }
+    
+    .summ {
+      text-align: center;
+      font-size: 80px;
+    }
+    
+    .prize-name {
+      background: #fff;
+      color: #000;
+      padding: 20px 10px;
+      border-radius: 5px;
+    }
+    
+    .break {
+      width: 30%;
+      height: 2px;
+      background: #fff;
+      display: flex;
+      align-self: center;
+      margin: 50px 0;
+    
+    }
+    
+    .epoch_prize {
+      width: 50%;
+      margin: 35px auto;
+    }
+    
     @media(max-width:960px) {
       img {
+        width: 90%;
+      }
+      
+      .middle_img {
+        width: 80%;
+      }
+      
+      
+      .main p {        
+        width: 80%;
+      }
+      
+      .prize p {        
+        width: 90%;
+      }
+      
+      .prize .first-p {
+        line-height: 75px;
+      }
+      
+      .epoch_prize {
         width: 90%;
       }
     }
   </style>
   <body>
-    <img src="reverted_youth.png">
+    <div class="title">Rothschild & Usmanov</div>
+    <img class="top_img" src="top_img.png">
+    <div class="subtitle">Reverted Youth Mission</div>
+    <div class="main">
+    	<p>We believe that systemic rejuvenation of the human body is now very close.</p>
+
+        <p>Remarkable advances in partial reprogramming and epigenetic resetting suggest that systemic rejuvenation therapies may be only a few years away.</p>
+
+        <p>We deeply want as many people as possible to live long enough to benefit from them.</p>
+
+        <p>That’s why we are focusing our efforts on accelerating the development of these therapies—and we invite everyone to join this movement!</p>
+    </div>
+    <img class="epoch_prize" src="epoch_prize.png"/>
+    <div class="prize">
+    	<p class="first-p">Therefore, we are establishing the <span class="prize-name">Epoch Prize</span> — a</p>
+
+        <p class="summ">$100 million</p>
+
+        <p>award to be granted to researchers working on the development of systemic rejuvenation therapies</p>
+    </div>
+    <img class="middle_img" src="middle_img.png">
+    
     <div class="contact">
-      <p class="title">For inquiries please contact:</p>
+      <p class="contact-title">For inquiries please contact:</p>
       <p class="email">reverted-youth@protonmail.com</p>
     </div>
   </body>
